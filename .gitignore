@@ -1,7 +1,5 @@
 #develop
 .env
-public/
-!public/.gitkeep
 test/result/
 !test/result/.gitkeep
 node_modules

@@ -1,4 +1,58 @@
 {
   "editor.tabSize": 2,
-  "editor.insertSpaces": true
+  "editor.insertSpaces": true,
+  "markuplint.enable": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "phpsab.executablePathCBF": "app/vendor/bin/phpcbf",
+  "phpsab.executablePathCS": "app/vendor/bin/phpcs",
+  "phpsab.composerJsonPath": "app/composer.json",
+  "phpsab.standard": "WordPress",
+  "phpsab.fixerArguments": [
+    "--ignore=app/vendor/*,app/config/*,app/web/wp/*"
+  ],
+  "phpsab.snifferArguments": [
+    "--ignore=app/vendor/*,app/config/*,app/web/wp/*"
+  ],
+  "emmet.includeLanguages": {
+    "ejs": "html"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "j69.ejs-beautify"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+ },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[php]": {
+    "editor.tabSize": 4,
+    "editor.insertSpaces": false,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "valeryanm.vscode-phpsab"
+  },
+  "eslint.workingDirectories": ["./"],
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "stylelint.validate": [
+    "css",
+    "scss"
+  ],
+  "stylelint.configFile": ".stylelintrc.json",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.stylelint": "explicit"
+  },
+  "prettier.configPath": ".prettierrc.json"
+
 }

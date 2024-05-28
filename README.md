@@ -1,25 +1,12 @@
 # ローカル環境の起動
 
-1. docker コンテナ立ち上げ
-
-```bash
-# プロジェクトルートで
-docker-compose up -d
-```
-
-2. nodejs コンテナに入る
-
-```bash
-docker-compose exec nodejs sh
-```
-
-3. node_modulesをインストール（初回のみ）
+1. node_modulesをインストール（初回のみ）
 
 ```bash
 npm ci
 ```
 
-4. ローカルサーバー立ち上げ
+2. ローカルサーバー立ち上げ
 
 ```bash
 # localhost:3000 で立ち上がる
@@ -30,13 +17,7 @@ npm run dev
 
 # ビルドの方法
 
-1. nodejs コンテナに入る
-
-```bash
-docker-compose exec nodejs sh
-```
-
-2. buildを実行
+1. buildを実行
 
 ```bash
 # distディレクトリにビルドされる（実行のたびに一度削除され再作成されます）
