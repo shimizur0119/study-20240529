@@ -1,8 +1,8 @@
 import 'destyle.css'
 import '../scss/index.scss'
-import 'swiper/css/bundle';
+import 'swiper/scss'
+import 'swiper/scss/navigation'
 
 import { commonInit } from '../ts/common'
 
-console.log('main.ts')
 commonInit()
