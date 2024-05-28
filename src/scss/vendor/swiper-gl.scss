@@ -1,0 +1,33 @@
+.swiper-gl {
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+
+  .swiper-slide,
+  swiper-slide {
+    position: relative;
+  }
+
+  .swiper-gl-image {
+    display: none;
+  }
+
+  > canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.swiper-gl-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}

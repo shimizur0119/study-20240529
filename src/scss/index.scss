@@ -1,14 +1,16 @@
 // base
-@import "variables";
-@import "mixin";
-@import "keyframes";
-@import "common";
+@import 'variables';
+@import 'mixin';
+@import 'keyframes';
+@import 'common';
+
+// vendor
+@import 'vendor/swiper-gl';
 
 // 非推奨な@importを内部的に最適化してくれているので、ワイルドカードが使えないので注意
-
 // components
-@import "components/header";
-@import "components/title";
+@import 'components/header';
+@import 'components/title';
 
 // pages
-@import "pages/top";
+@import 'pages/top';

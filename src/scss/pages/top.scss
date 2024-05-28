@@ -1,15 +1,31 @@
-.p-top {
+.wrapper {
+  // position: relative;
+  width: 80vw;
+  height: calc(100svh - (128px * 2));
+  margin: 0 auto;
 }
 
-// Custom styles for demo
-:root {
-  --swiper-navigation-color: #fff;
-  --swiper-pagination-color: #fff;
-  --swiper-pagination-bullet-inactive-color: #fff;
+.swiper {
+  width: 100%;
+  height: 100%;
 }
 
-.swiper-gl-image {
-  width: 100vw;
-  height: 100svh;
-  object-fit: cover;
+.swiper-slide-content {
+  position: absolute;
+  bottom: 32px;
+  left: 32px;
+  max-width: calc(100% - 64px);
+}
+
+.swiper-wrapper {
+  mix-blend-mode: difference;
+}
+
+.swiper-slide-title {
+  position: relative;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1.25;
+  color: white;
+  text-shadow: 0 0 5px rgb(0 0 0 / 25%);
 }
