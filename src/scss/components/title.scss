@@ -1,0 +1,15 @@
+.title {
+  display: block;
+  padding: 40px;
+  font-size: 30px;
+
+  // 相対パス（public起点）
+  background-image: url("assets/img/dummy.webp");
+
+  // 絶対パス
+  // background-image: url("/assets/img/dummy.webp");
+
+  .test{
+    color: red;
+  }
+}

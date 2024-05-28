@@ -1,0 +1,39 @@
+{
+  "name": "front",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "watch": "vite build -w",
+    "eslint": "eslint --ignore-path .gitignore . ",
+    "axe-test": "node test/config/axe-test.js > test/result/result_$(TZ=JST-9 date \"+%Y%m%d%H%M%S\").csv"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.16",
+    "destyle.css": "^4.0.0",
+    "glob": "^10.3.10",
+    "sass": "^1.69.5",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.0",
+    "vite-plugin-ejs": "^1.7.0",
+    "vite-plugin-static-copy": "^1.0.0"
+  },
+  "devDependencies": {
+    "@axe-core/puppeteer": "^4.9.0",
+    "axe-reports": "^1.1.11",
+    "eslint": "^8.57.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-n": "^16.6.2",
+    "eslint-plugin-promise": "^6.1.1",
+    "prettier": "^3.2.5",
+    "prettier-config-standard": "^7.0.0",
+    "puppeteer": "^22.6.5",
+    "serve": "^14.2.1",
+    "stylelint": "^16.3.1",
+    "stylelint-config-recess-order": "^5.0.1",
+    "stylelint-config-standard-scss": "^13.1.0"
+  }
+}

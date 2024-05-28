@@ -1,0 +1,51 @@
+@import "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;700&family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@400;700&display=swap";
+
+body {
+  // デフォルトのfontを定義
+  font-family: $font-default;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: $color-black;
+
+  * {
+    // 不要な背景の描画に使うリソースを節約
+    backface-visibility: hidden;
+
+    // ディスプレイの解像度により、アンチエイリアス方式を変更し描画を最適化
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: unset;
+
+    @media only screen and (min-resolution: 2dppx) {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    // フォーカス時の枠線消す
+    &:focus {
+      outline: none;
+    }
+  }
+
+  // テキストハイライト選択時
+  ::selection {
+    color: #fff;
+    background-color: #353538;
+  }
+}
+
+.pc-none {
+  @include pc {
+    display: none !important;
+  }
+}
+
+.sp-none {
+  @include sp {
+    display: none !important;
+  }
+}
+
+.displayContents {
+  display: contents;
+}
